@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'geist/font/sans.css';
+@import 'geist/font/mono.css';
+html{
+    background-color: black;
+}
