@@ -27,8 +27,8 @@ const routes = createRoutesFromElements(
         </Protected>
       }
     >
-      <Route path="user" element={<User />} />
-      <Route path="products" element={<Products />} />
+      <Route path="/user" element={<User />} />
+      <Route path="/products" element={<Products />} />
     </Route>
     <Route path="/auth/register" element={<Register />} />
     <Route path="/auth/login" element={<Login />} />
