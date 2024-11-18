@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 const LoginForm: React.FC = () => {
   const { setUser } = useAuth();
   const navigate = useNavigate();
-  const [error, setError] = useState<string | null>(null);
+  const [_error, setError] = useState<string | null>(null);
   const {
     register,
     handleSubmit,
