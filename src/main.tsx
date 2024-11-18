@@ -20,18 +20,18 @@ const routes = createRoutesFromElements(
   <Route path="/" element={<App />}>
     <Route index element={<Home />} />
     <Route
-      path="/dashboard"
+      path="dashboard"
       element={
         <Protected>
           <Dashboard />
         </Protected>
       }
     >
-      <Route path="/user" element={<User />} />
-      <Route path="/products" element={<Products />} />
+      <Route path="user" element={<User />} />
+      <Route path="products" element={<Products />} />
     </Route>
-    <Route path="/auth/register" element={<Register />} />
-    <Route path="/auth/login" element={<Login />} />
+    <Route path="auth/register" element={<Register />} />
+    <Route path="auth/login" element={<Login />} />
   </Route>
 );
 

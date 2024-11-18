@@ -44,7 +44,7 @@ const Navbar = () => {
 
       console.log(res.data.message);
 
-      navigate("/auth/login"); // Use your router to navigate
+      navigate("auth/login"); // Use your router to navigate
     } else {
       console.error("No email provided for logout. User is:", user);
     }
@@ -68,7 +68,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/dashboard"
+              to="dashboard"
               className="px-5 py-3 rounded-3xl bg-mintGreen font-medium text-sm hover:bg-softBlue hover:text-lightBeige text-center"
             >
               Dashboard
@@ -88,7 +88,7 @@ const Navbar = () => {
             <>
               <li>
                 <Link
-                  to="/auth/login"
+                  to="auth/login"
                   className="px-5 py-3 rounded-3xl bg-mintGreen font-medium text-sm hover:bg-softBlue hover:text-lightBeige text-center"
                 >
                   Login
@@ -96,7 +96,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/auth/register"
+                  to="auth/register"
                   className="px-5 py-3 rounded-3xl bg-mintGreen font-medium text-sm hover:bg-softBlue hover:text-lightBeige text-center"
                 >
                   Register
@@ -139,7 +139,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="/dashboard"
+                to="dashboard"
                 className="font-medium text-lightBeige"
                 onClick={toggleMenu} // Close menu on click
               >
@@ -162,7 +162,7 @@ const Navbar = () => {
               <>
                 <li>
                   <Link
-                    to="/auth/login"
+                    to="auth/login"
                     className="font-medium text-lightBeige"
                     onClick={toggleMenu} // Close menu on click
                   >
@@ -171,7 +171,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    to="/auth/register"
+                    to="auth/register"
                     className="font-medium text-lightBeige"
                     onClick={toggleMenu} // Close menu on click
                   >
