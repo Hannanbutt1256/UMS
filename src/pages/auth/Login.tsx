@@ -36,6 +36,12 @@ const LoginForm: React.FC = () => {
         email: response.data.user?.email, // Adjust based on actual response
         password: response.data.user?.password, // Adjust based on actual response
       };
+      if (!user.email) {
+        // If no user is found in the response
+        alert("Please register first");
+        navigate("/auth/register"); // Redirect to register page
+        return;
+      }
 
       console.log("user is:", user);
 
