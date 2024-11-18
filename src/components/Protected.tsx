@@ -9,7 +9,7 @@ const Protected: React.FC<ProtectedProps> = ({ children }) => {
   const { user } = useAuth();
 
   if (!user) {
-    return <Navigate to="/auth/login" replace />;
+    return <Navigate to="auth/login" />;
   }
 
   return children;
