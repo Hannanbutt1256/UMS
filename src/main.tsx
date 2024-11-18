@@ -20,7 +20,7 @@ const routes = createRoutesFromElements(
   <Route path="/" element={<App />}>
     <Route index element={<Home />} />
     <Route
-      path="dashboard"
+      path="/dashboard"
       element={
         <Protected>
           <Dashboard />
