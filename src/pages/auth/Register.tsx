@@ -3,8 +3,9 @@ import { registerSchema } from "../../validation/authSchema";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import axios from "axios";
-
+import { useNavigate } from "react-router-dom";
 const RegisterForm: React.FC = () => {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -23,7 +24,7 @@ const RegisterForm: React.FC = () => {
         data
       );
       console.log("Registration successful:", response.data);
-      window.location.href = "../auth/login";
+      navigate("/auth/login");
     } catch (error) {
       console.error("Registration error:", error);
     }
