@@ -44,7 +44,7 @@ const Navbar = () => {
 
       console.log(res.data.message);
 
-      navigate("/auth/login"); // Use your router to navigate
+      navigate("auth/login"); // Use your router to navigate
     } else {
       console.error("No email provided for logout. User is:", user);
     }
